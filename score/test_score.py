@@ -16,6 +16,7 @@ def main():
         print(make_text_red(f"Expected score to be 15 but was: {score_system.get_score()}"))
         print(make_text_red("Test Failed"))
     else:
+        
         print("\033[92mTest Pass!")
 
     try:

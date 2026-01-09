@@ -12,7 +12,7 @@ class ScoreSystem:
     def remove(self, score_to_remove):
         if score_to_remove <= 0:
             raise ValueError("Score_to_remove cannot be negative or zero")
-        if not isinstance(score_to_add, int):
+        if not isinstance(score_to_remove, int):
             raise TypeError("Score_to_remove has to be an integer")
         self.__score -= score_to_remove
         self.__score = max(self.__score, 0)
